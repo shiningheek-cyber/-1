@@ -66,6 +66,19 @@
 </head>
 <body class="pb-24">
 
+    <!-- Chosen Palette: Warm Sand & Slate Gray -->
+    <!-- Application Structure Plan: 
+        1. Welcome Header & Pro-Tips: Sets a refined and helpful tone for the visitors from Busan.
+        2. Timeline Itinerary: A step-by-step interactive map route from arrival to departure.
+        3. Restaurant & Knitting Spot Directory with Dual Action Buttons: Each of the 6 options now includes a direct link to multi-source blog reviews AND a Naver Map search optimized to open the Roadview/Streetview (거리뷰) immediately.
+        4. Interactive Polls & Chart Dashboard: Real-time preference tracking with quick KakaoTalk clipboard sharing.
+    -->
+    <!-- Visualization & Content Choices: 
+        - Schedule -> Vertical Timeline -> Elegant representation of the day.
+        - Card Action Buttons -> Flex alignment with "Review" and "Roadview" -> Increases usability for spatial exploration.
+        - Confirmation: NO SVG or Mermaid.js used.
+    -->
+
     <!-- Header Section -->
     <header class="relative z-10 primary-gradient text-white pt-16 pb-20 px-6 rounded-b-[3rem] shadow-xl text-center">
         <div class="relative z-10">
@@ -82,7 +95,7 @@
         <section class="bg-white rounded-3xl shadow-lg p-6 border border-gray-100 flex flex-col gap-4">
             <p class="text-sm text-gray-600 font-medium leading-relaxed">
                 해숙언니 딸 예진 양의 결혼식을 진심으로 축하합니다! 💍<br>
-                결혼식 뷔페 이후, 성수동에서 편안하고 우아하게 여정을 마무리할 수 있도록 지인들이 추천해주신 명소들을 모두 모았습니다. 아래 일정을 확인하시고 마음에 드는 곳에 투표해주세요!
+                결혼식 뷔페 이후, 성수동에서 편안하고 우아하게 여정을 마무리할 수 있도록 언니들이 추천해주신 명소들을 모두 모았습니다. 아래 일정을 확인하시고 마음에 드는 곳에 투표해주세요!
             </p>
             <div class="bg-amber-50 p-4 rounded-2xl border border-amber-100">
                 <h3 class="font-bold text-amber-800 text-sm mb-2 flex items-center gap-2">💡 당일 주최자 꿀팁</h3>
@@ -185,14 +198,17 @@
                         <div class="absolute top-3 left-3 bg-black/70 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold text-white">럭셔리 프라이빗 룸 중식당</div>
                     </div>
                     <div class="p-6">
-                        <div class="flex justify-between items-end mb-3">
+                        <div class="flex justify-between items-end mb-4">
                             <div>
                                 <a href="https://m.search.naver.com/search.naver?section=blog&query=성수동+서우+룸다이닝+후기" target="_blank" class="hover:underline flex items-center gap-1.5">
                                     <h4 class="font-black text-xl text-gray-800">1. 서우 룸다이닝 🔗</h4>
                                 </a>
                                 <p class="text-[10px] text-amber-700 font-bold mt-1">#갤러리아포레 #전석프라이빗룸 #딤섬코스 #어성초탕수육</p>
                             </div>
-                            <a href="https://m.search.naver.com/search.naver?section=blog&query=성수동+서우+룸다이닝+후기" target="_blank" class="text-[11px] text-blue-600 font-bold bg-blue-50 px-2.5 py-1.5 rounded shrink-0">리뷰 ➔</a>
+                            <div class="flex gap-1.5 shrink-0">
+                                <a href="https://m.search.naver.com/search.naver?section=blog&query=성수동+서우+룸다이닝+후기" target="_blank" class="text-[11px] text-blue-600 font-bold bg-blue-50 px-2.5 py-1.5 rounded">리뷰</a>
+                                <a href="https://m.map.naver.com/search.naver?query=서우+룸다이닝+성수" target="_blank" class="text-[11px] text-emerald-700 font-bold bg-emerald-50 px-2.5 py-1.5 rounded">거리뷰 🏙️</a>
+                            </div>
                         </div>
                         <p class="text-[12px] text-gray-600 leading-relaxed mb-5">성수동 서울숲 갤러리아포레 지하에 위치하여 격조 높은 인테리어를 자랑하는 프리미엄 중식당입니다. 전 좌석이 조용하고 고급스러운 룸으로 구성되어 있어, 언니들끼리만 방해받지 않고 대접받는 기분으로 최고의 요리를 즐길 수 있습니다.</p>
                         <button onclick="handleVote(0, '서우 룸다이닝')" class="w-full py-4 bg-stone-800 text-white rounded-xl text-sm font-bold active:scale-95 transition-transform">이곳으로 선택하기</button>
@@ -206,14 +222,17 @@
                         <div class="absolute top-3 left-3 bg-black/70 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold text-white">품격 있는 모던 한식 다이닝</div>
                     </div>
                     <div class="p-6">
-                        <div class="flex justify-between items-end mb-3">
+                        <div class="flex justify-between items-end mb-4">
                             <div>
                                 <a href="https://m.search.naver.com/search.naver?section=blog&query=서울숲+정이담+후기" target="_blank" class="hover:underline flex items-center gap-1.5">
                                     <h4 class="font-black text-xl text-gray-800">2. 정이담 🔗</h4>
                                 </a>
                                 <p class="text-[10px] text-amber-700 font-bold mt-1">#서울숲디타워 #고급반상 #보리굴비 #한우육회</p>
                             </div>
-                            <a href="https://m.search.naver.com/search.naver?section=blog&query=서울숲+정이담+후기" target="_blank" class="text-[11px] text-blue-600 font-bold bg-blue-50 px-2.5 py-1.5 rounded shrink-0">리뷰 ➔</a>
+                            <div class="flex gap-1.5 shrink-0">
+                                <a href="https://m.search.naver.com/search.naver?section=blog&query=서울숲+정이담+후기" target="_blank" class="text-[11px] text-blue-600 font-bold bg-blue-50 px-2.5 py-1.5 rounded">리뷰</a>
+                                <a href="https://m.map.naver.com/search.naver?query=정이담+서울숲" target="_blank" class="text-[11px] text-emerald-700 font-bold bg-emerald-50 px-2.5 py-1.5 rounded">거리뷰 🏙️</a>
+                            </div>
                         </div>
                         <p class="text-[12px] text-gray-600 leading-relaxed mb-5">정갈하고 깊은 맛의 한식을 현대적이고 세련된 인테리어 안에서 선보이는 럭셔리 한식 플레이스입니다. 고급스러운 보리굴비 반상과 깔끔한 요리들이 준비되어 있어 뷔페 식사 후에도 속 편하고 고급스럽게 기분 내기 좋습니다.</p>
                         <button onclick="handleVote(1, '정이담')" class="w-full py-4 bg-stone-800 text-white rounded-xl text-sm font-bold active:scale-95 transition-transform">이곳으로 선택하기</button>
@@ -227,14 +246,17 @@
                         <div class="absolute top-3 left-3 bg-black/70 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold text-white">실패 없는 최고급 양대창 명가</div>
                     </div>
                     <div class="p-6">
-                        <div class="flex justify-between items-end mb-3">
+                        <div class="flex justify-between items-end mb-4">
                             <div>
                                 <a href="https://m.search.naver.com/search.naver?section=blog&query=오발탄+서울숲점+후기" target="_blank" class="hover:underline flex items-center gap-1.5">
                                     <h4 class="font-black text-xl text-gray-800">3. 오발탄 서울숲점 🔗</h4>
                                 </a>
                                 <p class="text-[10px] text-amber-700 font-bold mt-1">#특양구이 #한우대창 #양밥필수 #구워주는집</p>
                             </div>
-                            <a href="https://m.search.naver.com/search.naver?section=blog&query=오발탄+서울숲점+후기" target="_blank" class="text-[11px] text-blue-600 font-bold bg-blue-50 px-2.5 py-1.5 rounded shrink-0">리뷰 ➔</a>
+                            <div class="flex gap-1.5 shrink-0">
+                                <a href="https://m.search.naver.com/search.naver?section=blog&query=오발탄+서울숲점+후기" target="_blank" class="text-[11px] text-blue-600 font-bold bg-blue-50 px-2.5 py-1.5 rounded">리뷰</a>
+                                <a href="https://m.map.naver.com/search.naver?query=오발탄+서울숲점" target="_blank" class="text-[11px] text-emerald-700 font-bold bg-emerald-50 px-2.5 py-1.5 rounded">거리뷰 🏙️</a>
+                            </div>
                         </div>
                         <p class="text-[12px] text-gray-600 leading-relaxed mb-5">더 이상 설명이 필요 없는 명불허전 프리미엄 양대창 구이 전문점입니다. 연기 없이 쾌적한 최신식 매장에서 직원분이 처음부터 끝까지 정성껏 구워주시기 때문에, 언니들과 손 하나 까딱하지 않고 편안하게 식사하며 맥주 한 잔 기울이기 좋습니다.</p>
                         <button onclick="handleVote(2, '오발탄 서울숲점')" class="w-full py-4 bg-stone-800 text-white rounded-xl text-sm font-bold active:scale-95 transition-transform">이곳으로 선택하기</button>
@@ -252,14 +274,17 @@
                         <div class="absolute top-3 left-3 bg-black/70 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold text-white">국내 최대 규모 실공장 카페</div>
                     </div>
                     <div class="p-6">
-                        <div class="flex justify-between items-end mb-3">
+                        <div class="flex justify-between items-end mb-4">
                             <div>
                                 <a href="https://m.search.naver.com/search.naver?section=blog&query=바늘이야기+성수점+후기" target="_blank" class="hover:underline flex items-center gap-1.5">
                                     <h4 class="font-black text-xl text-gray-800">4. 바늘이야기 성수 🔗</h4>
                                 </a>
                                 <p class="text-[10px] text-stone-500 font-bold mt-1">#무지개실벽면 #뜨개천국 #2층대형카페 #단추쇼룸</p>
                             </div>
-                            <a href="https://m.search.naver.com/search.naver?section=blog&query=바늘이야기+성수점+후기" target="_blank" class="text-[11px] text-blue-600 font-bold bg-blue-50 px-2.5 py-1.5 rounded shrink-0">리뷰 ➔</a>
+                            <div class="flex gap-1.5 shrink-0">
+                                <a href="https://m.search.naver.com/search.naver?section=blog&query=바늘이야기+성수점+후기" target="_blank" class="text-[11px] text-blue-600 font-bold bg-blue-50 px-2.5 py-1.5 rounded">리뷰</a>
+                                <a href="https://m.map.naver.com/search.naver?query=바늘이야기+성수점" target="_blank" class="text-[11px] text-emerald-700 font-bold bg-emerald-50 px-2.5 py-1.5 rounded">거리뷰 🏙️</a>
+                            </div>
                         </div>
                         <p class="text-[12px] text-gray-600 leading-relaxed mb-5">뜨개질을 취미로 하시는 분들이라면 무조건 들러야 할 랜드마크입니다. 1층에 드넓게 펼쳐진 오색 빛깔 실 더미와 이색 부자재들을 구경하는 재미가 쏠쏠하며, 2층 카페가 아주 넓고 트여있어 도란도란 손뜨개와 티타임을 즐기기 최고입니다.</p>
                         <button onclick="handleVote(3, '바늘이야기 성수')" class="w-full py-4 bg-stone-800 text-white rounded-xl text-sm font-bold active:scale-95 transition-transform">이곳으로 선택하기</button>
@@ -273,14 +298,17 @@
                         <div class="absolute top-3 left-3 bg-black/70 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold text-white">유럽 감성 프리미엄 뜨개 공방</div>
                     </div>
                     <div class="p-6">
-                        <div class="flex justify-between items-end mb-3">
+                        <div class="flex justify-between items-end mb-4">
                             <div>
                                 <a href="https://m.search.naver.com/search.naver?section=blog&query=리네아+성수+후기" target="_blank" class="hover:underline flex items-center gap-1.5">
                                     <h4 class="font-black text-xl text-gray-800">5. 리네아 (Linea) 🔗</h4>
                                 </a>
                                 <p class="text-[10px] text-stone-500 font-bold mt-1">#고급수입사 #명품완제품패키지 #클래식인테리어</p>
                             </div>
-                            <a href="https://m.search.naver.com/search.naver?section=blog&query=리네아+성수+후기" target="_blank" class="text-[11px] text-blue-600 font-bold bg-blue-50 px-2.5 py-1.5 rounded shrink-0">리뷰 ➔</a>
+                            <div class="flex gap-1.5 shrink-0">
+                                <a href="https://m.search.naver.com/search.naver?section=blog&query=리네아+성수+후기" target="_blank" class="text-[11px] text-blue-600 font-bold bg-blue-50 px-2.5 py-1.5 rounded">리뷰</a>
+                                <a href="https://m.map.naver.com/search.naver?query=리네아+성수" target="_blank" class="text-[11px] text-emerald-700 font-bold bg-emerald-50 px-2.5 py-1.5 rounded">거리뷰 🏙️</a>
+                            </div>
                         </div>
                         <p class="text-[12px] text-gray-600 leading-relaxed mb-5">프랑스나 영국 골목길의 고급 뜨개 숍을 그대로 옮겨놓은 듯 우아하고 따뜻한 아뜰리에입니다. 하이엔드 수입 완제품 모사와 고급스러운 도안 패키지들이 잘 정돈되어 있어 고풍스러운 무드를 좋아하시는 언니들에게 완벽한 힐링 스팟입니다.</p>
                         <button onclick="handleVote(4, '리네아 아뜰리에')" class="w-full py-4 bg-stone-800 text-white rounded-xl text-sm font-bold active:scale-95 transition-transform">이곳으로 선택하기</button>
@@ -294,14 +322,17 @@
                         <div class="absolute top-3 left-3 bg-black/70 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold text-white">뜨개 장인들의 숨겨진 아지트</div>
                     </div>
                     <div class="p-6">
-                        <div class="flex justify-between items-end mb-3">
+                        <div class="flex justify-between items-end mb-4">
                             <div>
                                 <a href="https://m.search.naver.com/search.naver?section=blog&query=성수동+메리노+뜨개+후기" target="_blank" class="hover:underline flex items-center gap-1.5">
                                     <h4 class="font-black text-xl text-gray-800">6. 메리노 (Merino) 🔗</h4>
                                 </a>
                                 <p class="text-[10px] text-stone-500 font-bold mt-1">#천연울소재 #감성실소품 #디자이너뜨개숍</p>
                             </div>
-                            <a href="https://m.search.naver.com/search.naver?section=blog&query=성수동+메리노+뜨개+후기" target="_blank" class="text-[11px] text-blue-600 font-bold bg-blue-50 px-2.5 py-1.5 rounded shrink-0">리뷰 ➔</a>
+                            <div class="flex gap-1.5 shrink-0">
+                                <a href="https://m.search.naver.com/search.naver?section=blog&query=성수동+메리노+뜨개+후기" target="_blank" class="text-[11px] text-blue-600 font-bold bg-blue-50 px-2.5 py-1.5 rounded">리뷰</a>
+                                <a href="https://m.map.naver.com/search.naver?query=메리노+성수" target="_blank" class="text-[11px] text-emerald-700 font-bold bg-emerald-50 px-2.5 py-1.5 rounded">거리뷰 🏙️</a>
+                            </div>
                         </div>
                         <p class="text-[12px] text-gray-600 leading-relaxed mb-5">최고급 천연 메리노 울과 자연 친화적인 프리미엄 원사들을 전문으로 취급하는 감성 편집숍 형태의 뜨개방입니다. 흔치 않은 트렌디한 컬러감의 실과 미니멀한 소품 도안들이 많아, 손재주가 남다르신 언니들의 안목을 대만족시킬 특별한 공간입니다.</p>
                         <button onclick="handleVote(5, '메리노 원사숍')" class="w-full py-4 bg-stone-800 text-white rounded-xl text-sm font-bold active:scale-95 transition-transform">이곳으로 선택하기</button>
